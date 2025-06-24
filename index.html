@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pablo Ludueña - Desarrollo de páginas web profesionales, landing pages rápidas y responsive para emprendedores y freelancers en Córdoba, Argentina.">
+  <title>Pablo Ludueña - Portafolio Web</title>
+  <link rel="icon" href="https://via.placeholder.com/32" type="image/png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+      padding-top: 60px; /* Espacio para el menú fijo */
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    h1 { margin: 0; font-size: 2.5em; }
+    h2 { color: #1a1a1a; margin-top: 0; }
+    section {
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: auto;
+      scroll-margin-top: 60px; /* Evita que el menú tape al hacer scroll a ancla */
+    }
+    .project, .service {
+      background: white;
+      margin-bottom: 2em;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1em auto;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1em;
+      background: #27ae60;
+      color: white;
+      padding: 0.7em 1.5em;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #219150;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 999;
+      text-decoration: none;
+    }
+
+    /* Animación fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Estilos para testimonios */
+    blockquote {
+      font-style: italic;
+      background-color: #e8f5e9;
+      border-left: 6px solid #27ae60;
+      margin: 1em 0;
+      padding: 1em 1.5em;
+      border-radius: 5px;
+    }
+
+    /* Estilo para menú fijo */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1a1a1a;
+      color: white;
+      padding: 1em;
+      z-index: 1000;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+      .btn {
+        padding: 0.8em 1.5em;
+      }
+      section {
+        margin: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú Fijo -->
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+  </nav>
+
+  <header>
+    <h1>Pablo Ludueña</h1>
+    <p>Desarrollador Web - Landing Pages que venden</p>
+    <a class="btn" href="mailto:pluduena544@gmail.com">Solicitá tu web</a>
+  </header>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi" class="fade-in">
+    <h2>Sobre mí</h2>
+    <div class="service">
+      <p>Soy Pablo, desarrollador web especializado en crear páginas rápidas, modernas y adaptadas a todos los dispositivos. Trabajo con emprendedores, freelancers y negocios que necesitan presencia online con impacto real.</p>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="fade-in">
+    <h2>Servicios</h2>
+    <div class="service">
+      <ul>
+        <li>✔️ Landing pages personalizadas</li>
+        <li>✔️ Optimización para celular y velocidad</li>
+        <li>✔️ Integración con WhatsApp y redes sociales</li>
+        <li>✔️ Mantenimiento y mejoras de sitios existentes</li>
+        <li>✔️ Tiendas online simples</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección Testimonios -->
+  <section id="testimonios" class="fade-in">
+    <h2>Testimonios</h2>
+    <blockquote>"Pablo transformó mi idea en una página web profesional y rápida. ¡Recomendado!" – Ana P.</blockquote>
+    <blockquote>"Excelente comunicación y entrega rápida. Mi tienda online nunca lució mejor." – Diego M.</blockquote>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="fade-in">
+    <h2>Proyectos</h2>
+
+    <div class="project">
+      <h3>Tienda Mía</h3>
+      <p>Landing page para negocio local de ropa. Diseño responsive con galería de productos y botón de WhatsApp.</p>
+      <img src="https://via.placeholder.com/600x400?text=Tienda+Mia" alt="Tienda Mía">
+      <a class="btn" href="landing1.html">Ver sitio</a>
+    </div>
+
+    <div class="project">
+      <h3>WebPro</h3>
+      <p>Página para freelancers con testimonios, sección de contacto y estilo profesional moderno.</p>
+      <img src="https://via.placeholder.com/600x400?text=WebPro" alt="WebPro">
+      <a class="btn" href="landing2.html">Ver sitio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pablo Ludueña - Desarrollo Web Profesional</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5493574436952" class="whatsapp" target="_blank" title="¡Hablá conmigo por WhatsApp!">💬</a>
+
+</body>
+</html>

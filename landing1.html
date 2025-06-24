@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- Corregí a mayúscula y con exclamación -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Mía</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa; /* Fondo más suave */
+      color: #333;
+    }
+    header, footer {
+      background-color: #2c3e50; /* Un azul oscuro más elegante */
+      color: white;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
+    section {
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #27ae60; /* Verde vibrante */
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1e874b;
+    }
+    .gallery {
+      margin-top: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    @media (min-width: 768px) {
+      .gallery {
+        justify-content: space-around;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda Mía</h1>
+    <p>Moda con estilo para vos</p>
+  </header>
+
+  <section>
+    <h2>Conocenos</h2>
+    <p>Somos una tienda de ropa con los mejores looks del momento. Calidad, precio y estilo.</p>
+    <a href="https://wa.me/5493574436952" class="btn" target="_blank" rel="noopener noreferrer">
+      ¡Escribinos por WhatsApp!
+    </a>
+  </section>
+
+  <section class="gallery" aria-label="Galería de productos">
+    <img src="https://via.placeholder.com/300x400?text=Producto+1" alt="Producto 1 - conjunto verano">
+    <img src="https://via.placeholder.com/300x400?text=Producto+2" alt="Producto 2 - camisa casual">
+    <img src="https://via.placeholder.com/300x400?text=Producto+3" alt="Producto 3 - pantalón deportivo">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tienda Mía</p>
+  </footer>
+</body>
+</html>
