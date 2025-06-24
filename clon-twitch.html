@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clon de Twitch</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e10;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #18181b;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #9147ff;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #1f1f23;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-info {
+      padding: 0.5rem;
+    }
+
+    .card-info h3 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .card-info p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #b3b3b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #18181b;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TwiClon</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Explorar</a>
+      <a href="#">Suscripciones</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="card">
+      <img src="https://placehold.co/300x180?text=Stream+1" alt="Stream 1" />
+      <div class="card-info">
+        <h3>Streamer1</h3>
+        <p>Jugando a Valorant</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placehold.co/300x180?text=Stream+2" alt="Stream 2" />
+      <div class="card-info">
+        <h3>Streamer2</h3>
+        <p>Just Chatting</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placehold.co/300x180?text=Stream+3" alt="Stream 3" />
+      <div class="card-info">
+        <h3>Streamer3</h3>
+        <p>League of Legends</p>
+      </div>
+    </div>
+    <!-- Agregá más cards si querés -->
+  </section>
+
+  <footer>
+    &copy; 2025 TwiClon - Proyecto de Pablo Ludueña
+  </footer>
+</body>
+</html>
